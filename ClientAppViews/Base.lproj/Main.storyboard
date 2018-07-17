@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="openTapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
         <!--Open Tabs-->
         <scene sceneID="utu-s9-i5F">
             <objects>
-                <viewController storyboardIdentifier="OpenTabs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RQx-em-yXp" customClass="OpenTabs" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpenTabs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RQx-em-yXp" customClass="OpenTabs" customModule="openTapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0zb-oa-Hoz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
         <!--Account Settings-->
         <scene sceneID="sTb-VO-9LM">
             <objects>
-                <viewController id="hZU-2r-mBL" customClass="AccountSettings" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hZU-2r-mBL" customClass="AccountSettings" customModule="openTapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a0H-gX-vfz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +208,7 @@
         <!--Tab History-->
         <scene sceneID="fkE-9f-MuR">
             <objects>
-                <viewController id="roj-gW-REV" customClass="TabHistory" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="roj-gW-REV" customClass="TabHistory" customModule="openTapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQX-w9-hh4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,8 +288,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JFx-MU-QWQ"/>
-        <segue reference="2qT-QH-N00"/>
+        <segue reference="Ugq-Sc-AX0"/>
+        <segue reference="PeO-MX-anV"/>
         <segue reference="jw7-mc-TOD"/>
     </inferredMetricsTieBreakers>
 </document>

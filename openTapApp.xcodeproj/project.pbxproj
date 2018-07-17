@@ -11,13 +11,10 @@
 		924C726D20FDBBD1007DCE47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725C20FDBBD1007DCE47 /* ViewController.swift */; };
 		924C726E20FDBBD1007DCE47 /* OpenTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725D20FDBBD1007DCE47 /* OpenTabs.swift */; };
 		924C726F20FDBBD1007DCE47 /* TabHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725E20FDBBD1007DCE47 /* TabHistory.swift */; };
-		924C727020FDBBD1007DCE47 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725F20FDBBD1007DCE47 /* thirdViewController.swift */; };
 		924C727220FDBBD1007DCE47 /* client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924C726120FDBBD1007DCE47 /* client.xcdatamodeld */; };
 		924C727320FDBBD1007DCE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */; };
 		924C727420FDBBD1007DCE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924C726520FDBBD1007DCE47 /* Main.storyboard */; };
-		924C727520FDBBD1007DCE47 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726720FDBBD1007DCE47 /* fourthViewController.swift */; };
 		924C727620FDBBD1007DCE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726820FDBBD1007DCE47 /* AppDelegate.swift */; };
-		924C727720FDBBD1007DCE47 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726920FDBBD1007DCE47 /* secondViewController.swift */; };
 		924C727820FDBBD1007DCE47 /* AccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726A20FDBBD1007DCE47 /* AccountSettings.swift */; };
 		924C727920FDBBD1007DCE47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 924C726B20FDBBD1007DCE47 /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -28,13 +25,10 @@
 		924C725C20FDBBD1007DCE47 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		924C725D20FDBBD1007DCE47 /* OpenTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTabs.swift; sourceTree = "<group>"; };
 		924C725E20FDBBD1007DCE47 /* TabHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabHistory.swift; sourceTree = "<group>"; };
-		924C725F20FDBBD1007DCE47 /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		924C726220FDBBD1007DCE47 /* hi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hi.xcdatamodel; sourceTree = "<group>"; };
 		924C726420FDBBD1007DCE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924C726620FDBBD1007DCE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		924C726720FDBBD1007DCE47 /* fourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		924C726820FDBBD1007DCE47 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		924C726920FDBBD1007DCE47 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		924C726A20FDBBD1007DCE47 /* AccountSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettings.swift; sourceTree = "<group>"; };
 		924C726B20FDBBD1007DCE47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,8 +47,10 @@
 		924C723920FDBB05007DCE47 = {
 			isa = PBXGroup;
 			children = (
-				924C724320FDBB05007DCE47 /* Products */,
 				924C725A20FDBBD1007DCE47 /* ClientAppViews */,
+				924C727B20FDBCEC007DCE47 /* ClientAppControllers */,
+				924C727A20FDBCDA007DCE47 /* ClientAppModels */,
+				924C724320FDBB05007DCE47 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,21 +65,32 @@
 		924C725A20FDBBD1007DCE47 /* ClientAppViews */ = {
 			isa = PBXGroup;
 			children = (
-				924C725B20FDBBD1007DCE47 /* Media.xcassets */,
 				924C725C20FDBBD1007DCE47 /* ViewController.swift */,
 				924C725D20FDBBD1007DCE47 /* OpenTabs.swift */,
-				924C725E20FDBBD1007DCE47 /* TabHistory.swift */,
-				924C725F20FDBBD1007DCE47 /* thirdViewController.swift */,
-				924C726120FDBBD1007DCE47 /* client.xcdatamodeld */,
-				924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */,
-				924C726520FDBBD1007DCE47 /* Main.storyboard */,
-				924C726720FDBBD1007DCE47 /* fourthViewController.swift */,
 				924C726820FDBBD1007DCE47 /* AppDelegate.swift */,
-				924C726920FDBBD1007DCE47 /* secondViewController.swift */,
+				924C725E20FDBBD1007DCE47 /* TabHistory.swift */,
 				924C726A20FDBBD1007DCE47 /* AccountSettings.swift */,
+				924C726120FDBBD1007DCE47 /* client.xcdatamodeld */,
+				924C726520FDBBD1007DCE47 /* Main.storyboard */,
+				924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */,
+				924C725B20FDBBD1007DCE47 /* Media.xcassets */,
 				924C726B20FDBBD1007DCE47 /* Info.plist */,
 			);
 			path = ClientAppViews;
+			sourceTree = "<group>";
+		};
+		924C727A20FDBCDA007DCE47 /* ClientAppModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClientAppModels;
+			sourceTree = "<group>";
+		};
+		924C727B20FDBCEC007DCE47 /* ClientAppControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClientAppControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,13 +167,10 @@
 			files = (
 				924C727220FDBBD1007DCE47 /* client.xcdatamodeld in Sources */,
 				924C727820FDBBD1007DCE47 /* AccountSettings.swift in Sources */,
-				924C727020FDBBD1007DCE47 /* thirdViewController.swift in Sources */,
 				924C726D20FDBBD1007DCE47 /* ViewController.swift in Sources */,
-				924C727520FDBBD1007DCE47 /* fourthViewController.swift in Sources */,
 				924C726E20FDBBD1007DCE47 /* OpenTabs.swift in Sources */,
 				924C726F20FDBBD1007DCE47 /* TabHistory.swift in Sources */,
 				924C727620FDBBD1007DCE47 /* AppDelegate.swift in Sources */,
-				924C727720FDBBD1007DCE47 /* secondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

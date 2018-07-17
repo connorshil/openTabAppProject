@@ -12,7 +12,7 @@
 		924C726E20FDBBD1007DCE47 /* OpenTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725D20FDBBD1007DCE47 /* OpenTabs.swift */; };
 		924C726F20FDBBD1007DCE47 /* TabHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725E20FDBBD1007DCE47 /* TabHistory.swift */; };
 		924C727020FDBBD1007DCE47 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C725F20FDBBD1007DCE47 /* thirdViewController.swift */; };
-		924C727220FDBBD1007DCE47 /* hi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924C726120FDBBD1007DCE47 /* hi.xcdatamodeld */; };
+		924C727220FDBBD1007DCE47 /* client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924C726120FDBBD1007DCE47 /* client.xcdatamodeld */; };
 		924C727320FDBBD1007DCE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */; };
 		924C727420FDBBD1007DCE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924C726520FDBBD1007DCE47 /* Main.storyboard */; };
 		924C727520FDBBD1007DCE47 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726720FDBBD1007DCE47 /* fourthViewController.swift */; };
@@ -74,7 +74,7 @@
 				924C725D20FDBBD1007DCE47 /* OpenTabs.swift */,
 				924C725E20FDBBD1007DCE47 /* TabHistory.swift */,
 				924C725F20FDBBD1007DCE47 /* thirdViewController.swift */,
-				924C726120FDBBD1007DCE47 /* hi.xcdatamodeld */,
+				924C726120FDBBD1007DCE47 /* client.xcdatamodeld */,
 				924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */,
 				924C726520FDBBD1007DCE47 /* Main.storyboard */,
 				924C726720FDBBD1007DCE47 /* fourthViewController.swift */,
@@ -158,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924C727220FDBBD1007DCE47 /* hi.xcdatamodeld in Sources */,
+				924C727220FDBBD1007DCE47 /* client.xcdatamodeld in Sources */,
 				924C727820FDBBD1007DCE47 /* AccountSettings.swift in Sources */,
 				924C727020FDBBD1007DCE47 /* thirdViewController.swift in Sources */,
 				924C726D20FDBBD1007DCE47 /* ViewController.swift in Sources */,
@@ -366,13 +366,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		924C726120FDBBD1007DCE47 /* hi.xcdatamodeld */ = {
+		924C726120FDBBD1007DCE47 /* client.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				924C726220FDBBD1007DCE47 /* hi.xcdatamodel */,
 			);
 			currentVersion = 924C726220FDBBD1007DCE47 /* hi.xcdatamodel */;
-			path = hi.xcdatamodeld;
+			path = client.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

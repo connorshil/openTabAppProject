@@ -35,9 +35,6 @@ class OpenTabs: UIViewController {
             self.performSegue(withIdentifier: "tabsToHistory", sender: self)
         case .account:
             self.performSegue(withIdentifier: "tabsToAccount", sender: self)
-        default:
-            //self.performSegue(withIdentifier: "tabsToHistory", sender: self)
-            print("shit")
         }
     }
     

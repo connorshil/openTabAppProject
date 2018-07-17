@@ -35,9 +35,6 @@ class AccountSettings: UIViewController {
             self.performSegue(withIdentifier: "accountToHistory", sender: self)
         case .tabs:
             self.performSegue(withIdentifier: "accountToTabs", sender: self)
-        default:
-            //self.performSegue(withIdentifier: "tabsToHistory", sender: self)
-            print("shit")
         }
     }
     

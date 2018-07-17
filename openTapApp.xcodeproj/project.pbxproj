@@ -17,6 +17,12 @@
 		924C727620FDBBD1007DCE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726820FDBBD1007DCE47 /* AppDelegate.swift */; };
 		924C727820FDBBD1007DCE47 /* AccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C726A20FDBBD1007DCE47 /* AccountSettings.swift */; };
 		924C727920FDBBD1007DCE47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 924C726B20FDBBD1007DCE47 /* Info.plist */; };
+		924C727D20FDBE2D007DCE47 /* OpenTabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C727C20FDBE2D007DCE47 /* OpenTabsController.swift */; };
+		924C727F20FDBE47007DCE47 /* TabHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C727E20FDBE47007DCE47 /* TabHistoryController.swift */; };
+		924C728120FDBE59007DCE47 /* AccountSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C728020FDBE59007DCE47 /* AccountSettingsController.swift */; };
+		924C728320FDBE6D007DCE47 /* AccountSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C728220FDBE6D007DCE47 /* AccountSettingsModel.swift */; };
+		924C728520FDBE88007DCE47 /* OpenTabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C728420FDBE88007DCE47 /* OpenTabsModel.swift */; };
+		924C728720FDBE94007DCE47 /* TabHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C728620FDBE94007DCE47 /* TabHistoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		924C726820FDBBD1007DCE47 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924C726A20FDBBD1007DCE47 /* AccountSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettings.swift; sourceTree = "<group>"; };
 		924C726B20FDBBD1007DCE47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924C727C20FDBE2D007DCE47 /* OpenTabsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabsController.swift; sourceTree = "<group>"; };
+		924C727E20FDBE47007DCE47 /* TabHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHistoryController.swift; sourceTree = "<group>"; };
+		924C728020FDBE59007DCE47 /* AccountSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsController.swift; sourceTree = "<group>"; };
+		924C728220FDBE6D007DCE47 /* AccountSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsModel.swift; sourceTree = "<group>"; };
+		924C728420FDBE88007DCE47 /* OpenTabsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabsModel.swift; sourceTree = "<group>"; };
+		924C728620FDBE94007DCE47 /* TabHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHistoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +85,8 @@
 				924C726120FDBBD1007DCE47 /* client.xcdatamodeld */,
 				924C726520FDBBD1007DCE47 /* Main.storyboard */,
 				924C726320FDBBD1007DCE47 /* LaunchScreen.storyboard */,
-				924C725B20FDBBD1007DCE47 /* Media.xcassets */,
 				924C726B20FDBBD1007DCE47 /* Info.plist */,
+				924C725B20FDBBD1007DCE47 /* Media.xcassets */,
 			);
 			path = ClientAppViews;
 			sourceTree = "<group>";
@@ -82,6 +94,9 @@
 		924C727A20FDBCDA007DCE47 /* ClientAppModels */ = {
 			isa = PBXGroup;
 			children = (
+				924C728220FDBE6D007DCE47 /* AccountSettingsModel.swift */,
+				924C728420FDBE88007DCE47 /* OpenTabsModel.swift */,
+				924C728620FDBE94007DCE47 /* TabHistoryModel.swift */,
 			);
 			path = ClientAppModels;
 			sourceTree = "<group>";
@@ -89,6 +104,9 @@
 		924C727B20FDBCEC007DCE47 /* ClientAppControllers */ = {
 			isa = PBXGroup;
 			children = (
+				924C727C20FDBE2D007DCE47 /* OpenTabsController.swift */,
+				924C727E20FDBE47007DCE47 /* TabHistoryController.swift */,
+				924C728020FDBE59007DCE47 /* AccountSettingsController.swift */,
 			);
 			path = ClientAppControllers;
 			sourceTree = "<group>";
@@ -167,9 +185,15 @@
 			files = (
 				924C727220FDBBD1007DCE47 /* client.xcdatamodeld in Sources */,
 				924C727820FDBBD1007DCE47 /* AccountSettings.swift in Sources */,
+				924C727F20FDBE47007DCE47 /* TabHistoryController.swift in Sources */,
 				924C726D20FDBBD1007DCE47 /* ViewController.swift in Sources */,
+				924C728320FDBE6D007DCE47 /* AccountSettingsModel.swift in Sources */,
+				924C728520FDBE88007DCE47 /* OpenTabsModel.swift in Sources */,
+				924C727D20FDBE2D007DCE47 /* OpenTabsController.swift in Sources */,
 				924C726E20FDBBD1007DCE47 /* OpenTabs.swift in Sources */,
+				924C728120FDBE59007DCE47 /* AccountSettingsController.swift in Sources */,
 				924C726F20FDBBD1007DCE47 /* TabHistory.swift in Sources */,
+				924C728720FDBE94007DCE47 /* TabHistoryModel.swift in Sources */,
 				924C727620FDBBD1007DCE47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

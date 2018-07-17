@@ -33,6 +33,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-eG-q2a">
+                                <rect key="frame" x="98" y="603" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip this shit"/>
+                                <connections>
+                                    <action selector="skip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lf1-vk-BdZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669.60000000000002" y="32.833583208395808"/>
+            <point key="canvasLocation" x="669.56521739130437" y="32.608695652173914"/>
         </scene>
         <!--Open Tabs-->
         <scene sceneID="utu-s9-i5F">
@@ -290,6 +298,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ugq-Sc-AX0"/>
         <segue reference="PeO-MX-anV"/>
-        <segue reference="jw7-mc-TOD"/>
+        <segue reference="ZLI-Me-zhW"/>
     </inferredMetricsTieBreakers>
 </document>

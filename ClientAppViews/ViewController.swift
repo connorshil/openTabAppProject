@@ -11,6 +11,9 @@ import LocalAuthentication
 
 class ViewController: UIViewController {
     
+    @IBAction func skip(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "authToTabs", sender: self)
+    }
     @IBAction func authWithTouchID(_ sender: Any) {
         
         let context = LAContext()

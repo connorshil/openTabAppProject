@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En0-KE-xUZ">
+                                <rect key="frame" x="148" y="107" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authWithTouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hok-lf-33P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="login stuff all in here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaa-If-bt9">
+                                <rect key="frame" x="130" y="332" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="RQx-em-yXp" kind="presentation" identifier="authToTabs" id="ZLI-Me-zhW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="32.833583208395808"/>
+        </scene>
+        <!--Open Tabs-->
+        <scene sceneID="utu-s9-i5F">
+            <objects>
+                <viewController storyboardIdentifier="OpenTabs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RQx-em-yXp" customClass="OpenTabs" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0zb-oa-Hoz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SLh-ng-FDC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY0-sF-kOe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.11552779568506244" green="0.40333549222797926" blue="0.1601246129959486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="I82-RH-U1p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="RQx-em-yXp" eventType="touchUpInside" id="oh8-tC-evy"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORW-i3-qht">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368520506801" green="0.09396164668656698" blue="0.23670255829015541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Rrf-iX-ZnT"/>
+                                        </constraints>
+                                        <state key="normal" title="Account">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="RQx-em-yXp" eventType="touchUpInside" id="Xfa-5n-p3Y"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-64-25G">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368520506801" green="0.09396164668656698" blue="0.23670255829015541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="OvH-da-en9"/>
+                                        </constraints>
+                                        <state key="normal" title="History">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="RQx-em-yXp" eventType="touchUpInside" id="OZM-xm-V3c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tabs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-cf-bbo">
+                                <rect key="frame" x="189" y="167" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SLh-ng-FDC" firstAttribute="top" secondItem="2dk-Fl-IgH" secondAttribute="top" id="Zwh-Xw-ee8"/>
+                            <constraint firstItem="2dk-Fl-IgH" firstAttribute="trailing" secondItem="SLh-ng-FDC" secondAttribute="trailing" id="ifs-1d-7hA"/>
+                            <constraint firstItem="SLh-ng-FDC" firstAttribute="leading" secondItem="2dk-Fl-IgH" secondAttribute="leading" id="xT9-Cp-icJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2dk-Fl-IgH"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="menuOptions" destination="ORW-i3-qht" collectionClass="NSMutableArray" id="nQB-Db-aTz"/>
+                        <outletCollection property="menuOptions" destination="MQE-64-25G" collectionClass="NSMutableArray" id="kG9-5z-dXg"/>
+                        <segue destination="hZU-2r-mBL" kind="presentation" identifier="tabsToAccount" id="PeO-MX-anV"/>
+                        <segue destination="roj-gW-REV" kind="presentation" identifier="tabsToHistory" id="Ugq-Sc-AX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5e-1P-hkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718.840579710145" y="-73.369565217391312"/>
+        </scene>
+        <!--Account Settings-->
+        <scene sceneID="sTb-VO-9LM">
+            <objects>
+                <viewController id="hZU-2r-mBL" customClass="AccountSettings" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0H-gX-vfz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rJL-eE-B26">
+                                <rect key="frame" x="0.0" y="20" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQl-ZF-AOG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.1155277957" green="0.40333549219999998" blue="0.160124613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="rOM-gZ-C84"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="hZU-2r-mBL" eventType="touchUpInside" id="qky-DL-Gfz"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fE-4r-OvZ">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368519999998" green="0.093961646689999997" blue="0.2367025583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8dF-qa-IwW"/>
+                                        </constraints>
+                                        <state key="normal" title="Tabs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="hZU-2r-mBL" eventType="touchUpInside" id="FGn-IL-0pb"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-yO-GyG">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368519999998" green="0.093961646689999997" blue="0.2367025583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="21T-A3-Fs7"/>
+                                        </constraints>
+                                        <state key="normal" title="History">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="hZU-2r-mBL" eventType="touchUpInside" id="b4m-aZ-xay"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCr-zn-6v4">
+                                <rect key="frame" x="175" y="149" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rJL-eE-B26" firstAttribute="top" secondItem="5Hw-Y4-2hX" secondAttribute="top" id="47T-gd-L6a"/>
+                            <constraint firstItem="5Hw-Y4-2hX" firstAttribute="trailing" secondItem="rJL-eE-B26" secondAttribute="trailing" id="UGg-HO-My1"/>
+                            <constraint firstItem="rJL-eE-B26" firstAttribute="leading" secondItem="5Hw-Y4-2hX" secondAttribute="leading" id="pDf-f3-Pfj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Hw-Y4-2hX"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="menuOptions" destination="2fE-4r-OvZ" collectionClass="NSMutableArray" id="XgI-Tu-34M"/>
+                        <outletCollection property="menuOptions" destination="rUG-yO-GyG" collectionClass="NSMutableArray" id="1hb-sZ-uUD"/>
+                        <segue destination="roj-gW-REV" kind="presentation" identifier="accountToHistory" id="JFx-MU-QWQ"/>
+                        <segue destination="RQx-em-yXp" kind="presentation" identifier="accountToTabs" id="Vfo-B8-qQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Csf-8y-Nwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630.434782608696" y="393.75000000000006"/>
+        </scene>
+        <!--Tab History-->
+        <scene sceneID="fkE-9f-MuR">
+            <objects>
+                <viewController id="roj-gW-REV" customClass="TabHistory" customModule="tempProjTitle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQX-w9-hh4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qgh-zV-vtj">
+                                <rect key="frame" x="0.0" y="20" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xs-jU-apd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.1155277957" green="0.40333549219999998" blue="0.160124613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SsX-Kz-J5Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Menu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="roj-gW-REV" eventType="touchUpInside" id="AMN-08-5Aa"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYJ-RZ-MP5">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368519999998" green="0.093961646689999997" blue="0.2367025583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ek4-Ol-whc"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hV4-BS-YQ0"/>
+                                        </constraints>
+                                        <state key="normal" title="Tabs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="roj-gW-REV" eventType="touchUpInside" id="HPQ-XK-3gI"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="may-Ib-BhE">
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.082978368519999998" green="0.093961646689999997" blue="0.2367025583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UfZ-5q-v9u"/>
+                                        </constraints>
+                                        <state key="normal" title="Account">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuSelected:" destination="roj-gW-REV" eventType="touchUpInside" id="Wm3-NN-5UF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjX-y1-Xjk">
+                                <rect key="frame" x="180" y="127" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qgh-zV-vtj" firstAttribute="leading" secondItem="qsR-HK-Aqq" secondAttribute="leading" id="5jv-2N-SfT"/>
+                            <constraint firstItem="qgh-zV-vtj" firstAttribute="top" secondItem="qsR-HK-Aqq" secondAttribute="top" id="DHM-Xq-sZd"/>
+                            <constraint firstItem="qgh-zV-vtj" firstAttribute="trailing" secondItem="qsR-HK-Aqq" secondAttribute="trailing" id="ITZ-s1-dQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qsR-HK-Aqq"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="menuOptions" destination="may-Ib-BhE" collectionClass="NSMutableArray" id="2Gc-dG-R6V"/>
+                        <outletCollection property="menuOptions" destination="aYJ-RZ-MP5" collectionClass="NSMutableArray" id="9sX-kJ-iAx"/>
+                        <segue destination="hZU-2r-mBL" kind="presentation" identifier="historyToAccount" id="2qT-QH-N00"/>
+                        <segue destination="RQx-em-yXp" kind="presentation" identifier="historyToTabs" id="jw7-mc-TOD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szF-78-DhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3022" y="-512"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JFx-MU-QWQ"/>
+        <segue reference="2qT-QH-N00"/>
+        <segue reference="jw7-mc-TOD"/>
+    </inferredMetricsTieBreakers>
+</document>
